@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>My Bank</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/rdXQwYM/bank.png" type="image/x-icon">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header class="mb-1">
+        <!--  navbar start -->
+        <section>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="d-flex justify-content-center align-items-center mx-auto ">
+                    <a class="navbar-brand" href="#"><img src="https://i.ibb.co/rdXQwYM/bank.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active fs-2 fw-bold text-center " aria-current="page"
+                                    href="#">Welcome to <span class="text-primary ">My Bank</span></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <!--  navbar end -->
+    </header>
+
+
+
+
+    <main>
+
+        <section class="container text-white mt-3 mb-5">
+            <div class="row  justify-content-center align-items-center g-5">
+                <div class="col-lg-6 col-12 ">
+
+                    <div class="d-flex flex-column gap-3">
+
+                        <div class="bg-info text-center fw-bold py-3 px-5 shadow-lg rounded-3">
+                        <h2>Balance</h2>
+                           <p class="fs-1">$ <span id="prevBalanceAmount">100000</span> </p>
+                     </div>
+                        <div class="bg-warning text-center fw-bold py-3 shadow-lg rounded-3">
+                        <h2>Withdraw</h2>
+                           <p class="fs-1">$ <span id="prevWithdrawAmount">00</span> </p>
+                     </div>
+                        <div class="bg-danger bg-opacity-50  text-center fw-bold py-3 shadow-lg rounded-3">
+                        <h2>Deposit</h2>
+                           <p class="fs-1">$ <span id="prevDepositAmount">00</span> </p>
+                     </div>
+
+                    </div>
+
+                </div>
+                <div class=" col-lg-6 col-12 ">
+                    <div class="d-flex flex-column gap-3">
+
+                        <div class="bg-success  text-center fw-bold py-4 px-5 shadow-lg rounded-3">
+                        <h2>New Deposit Amount</h2>
+                           <input type="text" name="" id="depositInput" placeholder="$ Enter Amount" class=" w-75 px-2 py-1 fs-4 border-0 mt-4">
+                           <button id="depositBtn"  class="d-block mx-auto mt-4 fw-bold border-3 px-4 py-2 fs-5">Deposit</button>
+                     </div>
+
+                     <div class="bg-danger  text-center fw-bold py-4 px-5 shadow-lg rounded-3">
+                        <h2>New Withdraw Amount</h2>
+                        <input type="text" name="" id="withdrawInput" placeholder="$ Enter Amount" class=" w-75 px-2 py-1 fs-4 border-0 mt-4">
+                        <button id="withdrawBtn"  class="d-block mx-auto mt-4 fw-bold border-3 px-4 py-2 fs-5">Withdraw</button>
+                     </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+
+
+
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- BootstraXp JavaScript Libraries -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
